@@ -43,30 +43,26 @@
         <h1 class="mt-4 pb-4 border-bottom">送信完了</h1>
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
-        <table class="table">
-            <thead>
-              <tr>
-                <h2>送信内容</h2>
-              </tr>
-                <tbody>
-                    <tr>
-                        <th>会社名</th><td><%= data_company %></td>
-                    </tr>
-                    <tr>
-                        <th>氏名</th><td><%= data_name %></td>
-                    </tr>
-                    <tr>
-                        <th>メール</th><td><%= data_mail %></td>
-                    </tr>
-                    <tr>
-                        <th>電話番号</th><td><%= data_tel %></td>
-                    </tr>
-                    <tr>
-                        <th>内容</th><td><%= data_content.gsub(/\r\n\|\r|\n/,"<br>") %></td>
-                    </tr>
-                </tbody>
-            </thead>
-        </table>
+        <h2>送信内容</h2>
+          <table class="table">
+              <tbody>
+                  <tr>
+                      <th>会社名</th><td><%= data_company %></td>
+                  </tr>
+                  <tr>
+                      <th>氏名</th><td><%= data_name %></td>
+                  </tr>
+                  <tr>
+                      <th>メール</th><td><%= data_mail %></td>
+                  </tr>
+                  <tr>
+                      <th>電話番号</th><td><%= data_tel %></td>
+                  </tr>
+                  <tr>
+                      <th>内容</th><td><%= data_content.gsub(/\r\n\|\r|\n/,"<br>") %></td>
+                  </tr>
+              </tbody>
+          </table>
         <div class="text-center mb-4">
             <!-- 「戻る」ボタンを緑色にする設定を追加 btn-success-->
             <a href="/" class="btn btn-success">戻る</a>
