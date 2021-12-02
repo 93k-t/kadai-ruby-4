@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <% data_company = params["company"]%>
-    <% data_name = params["name"]%>
-    <% data_mail = params["mail"]%>
-    <% data_tel = params["tel"]%>
-    <% data_content = params["content"]%>
+  <% data_company = params["company"] %>
+  <% data_name = params["name"] %>
+  <% data_mail = params["mail" ]%>
+  <% data_tel = params["tel"] %>
+  <% data_content = params["content"] %>
     <header>
         <!-- 576px以上の画面幅のとき、メニューを表示する（それ未満なら折りたたむ）指定を追加 navbar-expand-sm -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
@@ -44,7 +44,10 @@
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
         <table class="table">
-            <thead><h2>送信内容</h2>
+            <thead>
+              <tr>
+                <h2>送信内容</h2>
+              </tr>
                 <tbody>
                     <tr>
                         <th>会社名</th><td><%= data_company %></td>
